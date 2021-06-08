@@ -2,7 +2,6 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <!--<meta name="viewport" content="width=device-width" />-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vacation Rentals & Unique Homes</title>
     <link
@@ -24,8 +23,6 @@
       <div class="logo">Thinkfulbnb</div>
       <nav>
         <ul id="menu">
-
-
           <li><a href="#stay">Stay</a></li>
           <li><a href = "#about">About</a></li>
           <li><a href = "#ideas">Ideas</a></li>
@@ -52,25 +49,23 @@
             </div>
 
             <div>
-              <label for="form-message">Arrival</label>
+              <label>Arrival</label>
               <input
-                id="form-message"
                 type="date"
                 name="Arrival"
               />
             </div>
 
             <div>
-              <label for="form-message">Depart</label>
+              <label>Depart</label>
               <input
-                id="form-message"
                 type="date"
                 name="Depart"
               />
             </div>
 
             <div>
-              <label for="Type">Type</label>
+                <label>Type</label>
                 <select name="Type" size="1">
                 <option value="Apartment">Apartment</option>
                 <option value="Barn">Barn</option>
@@ -91,66 +86,83 @@
       <!-- About -->
       <section id="about" class="alternate-background">
         <h2>About</h2>
-       <div class = "group"> 
-        <div class = "item item-double"> 
-          <img
-          src="images/vacation-rental-pool.png"
-          alt="Thinkfulbnb - Vacation rental pool"
-        />
-        <img
-          src="images/vacation-rental-inside-stone.png"
-          alt="Thinkfulbnb - Vacation rental inside stone"
-        />
-
-        </div> 
-
-      <div class = "item">
-        <p>
-          Fusce porta odio nunc, eget pretium massa rutrum sit amet. Etiam
-          fringilla aliquam dapibus. Maecenas quis nisi sed turpis aliquam
-          porttitor eget ut quam. Sed vel scelerisque ex. Duis in pharetra
-          neque, at tempus lorem. Aenean mi magna, posuere at quam sed, euismod
-          gravida neque.
-        </p>
-      </div>
-      </div>
+        <div class="row">
+          <div class = "col px5 quarter full">
+            <img
+              src="images/vacation-rental-pool.png"
+              alt="Thinkfulbnb - Vacation rental pool"
+            />
+          </div>
+          <div class = "col px5 quarter full">
+            <img
+              src="images/vacation-rental-inside-stone.png"
+              alt="Thinkfulbnb - Vacation rental inside stone"
+            />
+          </div>
+          <div class = "col px5 half">
+            <p class="vertical-center">
+              Fusce porta odio nunc, eget pretium massa rutrum sit amet. Etiam
+              fringilla aliquam dapibus. Maecenas quis nisi sed turpis aliquam
+              porttitor eget ut quam. Sed vel scelerisque ex. Duis in pharetra
+              neque, at tempus lorem. Aenean mi magna, posuere at quam sed, euismod
+              gravida neque.
+            </p>
+          </div>
+        </div>
       </section>
 
       <!-- Ideas -->
       <section id="ideas">
         <h2>Ideas</h2>
-        
-        <div class = "container">
 
-        <div class = "thing"><h3>Forest retreats</h3>
-        <img src="images/forest-retreat.png" alt="Thinkfulbnb - Forest retreat"/>
-        </div>
+          <div class = "row">
+            <div class="col half px40 py10">
+             <div class="row">
+              <p>Forest retreats</p>
+             </div>
+             <div class="full">
+              <img src="images/forest-retreat.png" alt="Thinkfulbnb - Forest retreat"/>
+             </div>
+            </div>
 
+            <div class="col half px40 py10">
+             <div class="row">
+              <p>Beaches</p>
+             </div>
+             <div class="full">
+              <img src="images/beach-house.png" alt="Thinkfulbnb - Beach house" />
+             </div>
+            </div>
+          </div>
 
-        <div class = "thing"><h3>Beaches</h3>
-        <img src="images/beach-house.png" alt="Thinkfulbnb - Beach house" />
-        </div>
-
-
-        <div class = "thing"><h3>Rustic cabins</h3>
-        <img src="images/cabin.png" alt="Thinkfulbnb - Cabin" />
-        </div>
-
-
-        <div class = "thing"><h3>Pet-friendly</h3>
-        <img src="images/pet-friendly.png" alt="Thinkfulbnb - Pet-friendly" />
-        </div>
-
-      </div>
+          <div class="row">
+            <div class="col half px40 py10">
+             <div class="row">
+              <p>Rustic Cabins</p>
+             </div>
+             <div class="full">
+              <img src="images/cabin.png" alt="Thinkfulbnb - Cabin" />
+             </div>
+            </div>
+            
+            <div class="col half px40 py10">
+             <div class="row">
+              <p>Pet-Friendly</p>
+             </div>
+             <div class="full">
+              <img src="images/pet-friendly.png" alt="Thinkfulbnb - Pet-friendly" />
+             </div>
+            </div>
+          </div>
 
       </section>
 
       <!-- Host -->
       <section id="host" class="alternate-background">
-       
+        <div class = "row">
+        <div class = "col half">
+        <div class="vertical-center">
         <h2>Want to Become a Thinkfulbnb Host?</h2>
-        <div class = "thinkfulperson">
-        <div class = "sections">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
           molestie in est id efficitur. Sed hendrerit ut turpis quis dapibus.
@@ -169,8 +181,9 @@
           </li>
         </ul>
         </div>
-
-      <div class = "sections1">
+      </div>
+      
+      <div class = "col half full">
       <img src="images/become-a-host.png" alt="Thinkfulbnb - Become a host" />
       </div>
       </div>
