@@ -4,6 +4,62 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+.full {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden
+}
+
+.vertical-center {
+  margin: 0;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.full img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%
+}
+
+.absolute {
+  position: absolute;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+.px40 {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.px5 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.py10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.quarter{
+  width: 25%;
+}
+
+.half {
+  width: 50%;
+}
+
 h2 {
   font-size: 26px;
   font-weight: 400;
@@ -35,37 +91,18 @@ main img {
 }
 
 /* ---  Groups & Items --- */
-/*
+
 .group {
   display: flex;
   flex-direction: column;
 }
-
 .item {
   flex: 1;
   margin: 10px;
 }
-
 .item-double {
   flex: 2;
 }
-*/
-
-.group {
-  display: flex;
-  flex-direction: row;
-}
-.item {
-  flex: 1;
-  margin: 10px;
-  float: left;
-}
-.item-double {
-  flex: 2;
-}
-
-
-
 
 /* -------  Navigation ------- */
 
@@ -166,13 +203,15 @@ footer p {
   label {
     float: left;
     width: 10em;
-    /*margin-right: 1em;*/
     }
 
 }
 
 @media all and (min-width: 480px){
 
+  .group{
+    flex-direction: column;
+  }
   /* Header Section*/
   header {
     background-color: hsl(349, 100%, 61%);
@@ -182,9 +221,7 @@ footer p {
   }
 
   .logo {
-    font-family: "Pangolin", cursive;
     font-size: 35px;
-    color: #fff;
   }
   
   header nav ul li {
@@ -192,6 +229,7 @@ footer p {
     font-size: 15px;
     display: inline;
     }
+    
   /*--------*/
 
   /* Form Section*/
@@ -220,42 +258,8 @@ footer p {
     font-size: 20px;
   }
 
-  .row {
-    display: inline-block;
-    margin: auto;
-  }
-
-  div img {
-    height: 150px;
-    width: 250px;
-  }
 
 /*-----*/
-
-/* About Section*/
-.about{
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
-
-.aboutPics{
-display: flex;
-width: 50%;
-gap: 15px;
-}
-
-.aboutPar{
-  display: flex;
-  position: relative;
-  font-size: 14px;
-  align-items: center;
-  width: 50%;
-  float: left;
-}
-
-/* ------- */
-
 
 /* Ideas Section */
 
@@ -264,39 +268,5 @@ gap: 15px;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
-.thing {
-width: 50%;
-position: relative;
-}
-
-/*--------*/
-
-/*hosts section */
-
-.thinkfulperson{
-  display: flex;
-  justify-content: space-between;
-}
-
-
-.sections{
-align-items: center;
-width: 50%;
-justify-content: center;
-}
-
-
-.sections1{
-display: inline-flex;
-justify-content: center;
-align-items: center;
-margin-left: auto;
-order: 2;
-width: 50%
-}
-
-
-/* -------*/
 
 }
