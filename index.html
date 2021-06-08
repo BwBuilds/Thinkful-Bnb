@@ -2,7 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <!--<meta name="viewport" content="width=device-width" />-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vacation Rentals & Unique Homes</title>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -17,6 +18,7 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
+<!--Navigation-->
   <body>
     <header>
       <div class="logo">Thinkfulbnb</div>
@@ -31,6 +33,7 @@
         </ul>
       </nav>
     </header>
+<!--End Navigation-->
 
     <main>
       <!-- Stay -->
@@ -54,7 +57,6 @@
                 id="form-message"
                 type="date"
                 name="Arrival"
-                placeholder="mm/dd/yyyy"
               />
             </div>
 
@@ -64,7 +66,6 @@
                 id="form-message"
                 type="date"
                 name="Depart"
-                placeholder="mm/dd/yyyy"
               />
             </div>
 
@@ -81,7 +82,7 @@
               </select>
             </div>
 
-            <button type="search">Search</button>
+            <button>Search</button>
 
         </form>
       </section>
@@ -90,20 +91,20 @@
       <!-- About -->
       <section id="about" class="alternate-background">
         <h2>About</h2>
-      <div class = "about">
-        <div class = "aboutPics">
+       <div class = "group"> 
+        <div class = "item item-double"> 
           <img
           src="images/vacation-rental-pool.png"
           alt="Thinkfulbnb - Vacation rental pool"
         />
-        
         <img
           src="images/vacation-rental-inside-stone.png"
           alt="Thinkfulbnb - Vacation rental inside stone"
         />
-        </div>
 
-        <div class = "aboutPar">
+        </div> 
+
+      <div class = "item">
         <p>
           Fusce porta odio nunc, eget pretium massa rutrum sit amet. Etiam
           fringilla aliquam dapibus. Maecenas quis nisi sed turpis aliquam
@@ -119,31 +120,28 @@
       <section id="ideas">
         <h2>Ideas</h2>
         
-        
-        <div class = "spots">
+        <div class = "container">
 
-        <div class = "spotimg"><h3>Forest retreats</h3>
+        <div class = "thing"><h3>Forest retreats</h3>
         <img src="images/forest-retreat.png" alt="Thinkfulbnb - Forest retreat"/>
         </div>
 
 
-        <div class = "spotimg"><h3>Beaches</h3>
+        <div class = "thing"><h3>Beaches</h3>
         <img src="images/beach-house.png" alt="Thinkfulbnb - Beach house" />
         </div>
 
 
-        <div class = "spotimg">
-        <h3>Rustic cabins</h3>
+        <div class = "thing"><h3>Rustic cabins</h3>
         <img src="images/cabin.png" alt="Thinkfulbnb - Cabin" />
         </div>
 
 
-        <div class = "spotimg">
-        <h3>Pet-friendly</h3>
+        <div class = "thing"><h3>Pet-friendly</h3>
         <img src="images/pet-friendly.png" alt="Thinkfulbnb - Pet-friendly" />
         </div>
 
-        </div>
+      </div>
 
       </section>
 
